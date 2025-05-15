@@ -9,65 +9,71 @@
 }
 
 html {
-    font-size: 62.5%; /* Nu är 1 rem lika 10 px */
+    font-size: 62.5%; /* Nu är 1 rem lika med 10 px */
 }
 
 body {
-    background-color: #A100004D;
+    background-color: rgb(192, 130, 89);
     font-family: 'Open Sans', sans-serif;
     color: black;
 }
 
+/* Container för recept-delen */
+.container {
+    position: relative;
+    max-width: 128rem;
+    margin: 0 auto;
+    background: rgb(255, 255, 255);
+    padding: 0 6.4rem 6.4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+}
+
 /* Hero */
 .hero {
-    width: 100vw;
-    left: 50%;
-    transform: translateX(-50%);
+    width: calc(100% + 12.8rem);
+    margin: -6.4rem -6.4rem 3.2rem;
     height: 50rem;
     overflow: hidden;
     position: relative;
 }
 
 .hero img {
+    position: absolute;
+    padding: 0 0.2rem 0 0.2rem;
     width: 100%;
     height: 100%;
     object-fit: cover;
     display: block;
 }
 
-/* Container för recept-delen*/
-
-.container {
-    position: relative;
-    max-width: 128rem;
-    margin: 0 auto;
-    background: red;
-    padding: 6.4rem;
+/* Recept Innehåll */
+.recept-content {
     display: flex;
     flex-direction: column;
     gap: 3.2rem;
 }
 
 /* Rubrik & Beskrivning */
-
 .intro h1 {
+    color: rgba(175, 56, 8, 0.736);
     font-size: 4rem;
     font-weight: 700;
-    margin-bottom: 1.6rem;
+    margin-bottom: 3.2rem;
 }
 
 .intro p {
     font-size: 2.4rem;
-    line-height: 100%;
-    background-color: blue;
-    padding: 1.6rem;
+    font-weight: 400;
+    line-height: 1.4;
+    background-color:#EBEBEB;
+    padding: 2.4rem;
 }
 
 /* Ingredienser */
-
 .ingredienser .heading {
     display: flex;
-    justify-content: space-between;
     align-items: baseline;
     margin-bottom: 1.6rem;
 }
@@ -80,16 +86,56 @@ font-weight: 600;
 .ingredienser .heading span {
     font-size: 2.4rem;
     font-weight: 400;
-    color: green;
+    margin-left: 1.6rem;
 }
 
 .ingredienser ul {
     list-style: disc inside;
     padding-left: 2.4rem;
     font-size: 1.6rem;
-    line-height: 100%;
+    margin-top: 12px;
 }
 
 .ingredienser ul li {
     margin-bottom: 0.8rem;
+    line-height: 1.4;
+}
+
+/* Instruktioner */
+.instruktioner h2 {
+    font-size: 2.4rem;
+    font-weight: 600;
+    margin-bottom: 1.6rem;
+}
+
+.instruktioner ol {
+    list-style: decimal inside;
+    padding-left: 1.6rem;
+    font-size: 1.6rem;
+    margin-top: 12px;
+}
+
+.instruktioner ol li {
+    margin-bottom: 0.8rem;
+    line-height: 1.4;
+}
+
+/* Serveringförslag */
+.servering h2 {
+    font-size: 2.4rem;
+    font-weight: 600;
+    margin-bottom: 1.6rem;
+}
+
+.servering-pics {
+    display: flex;
+    gap: 2.4rem;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+.servering-pics img {
+    flex: 1 1 48%;
+    height: 40rem;
+    object-fit: cover;
 }
