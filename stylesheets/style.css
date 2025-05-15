@@ -1,5 +1,7 @@
+/* Open Sans */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
+/* Grundläggande */
 * {
     margin: 0;
     padding: 0;
@@ -13,50 +15,81 @@ html {
 body {
     background-color: #A100004D;
     font-family: 'Open Sans', sans-serif;
-    padding: 20px;
     color: black;
 }
 
-main {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 64px;
-  position: relative;
+/* Hero */
+.hero {
+    width: 100vw;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 50rem;
+    overflow: hidden;
+    position: relative;
 }
 
-/* Hero-sektionen bryter sig ut, men är centrerad */
-.hero-container {
-  position: relative;
-  width: 100vw;           /* Tar hela viewport-bredden */
-  left: 50%;              /* Flyttar startpunkten till mitten av main */
-  transform: translateX(-50%); /* Flyttar tillbaka hälften av viewport-bredden */
-  height: 500px;
-  overflow: hidden;
-  margin-bottom: 64px;
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
-/* Bilden täcker hela hero-container utan att förvrängas */
-.hero-container img {
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-}
-/* Recept sektion */
-.recept-container {
+/* Container för recept-delen*/
+
+.container {
+    position: relative;
+    max-width: 128rem;
+    margin: 0 auto;
+    background: red;
+    padding: 6.4rem;
     display: flex;
     flex-direction: column;
-    gap: 32px;
-    background-color: red;
+    gap: 3.2rem;
 }
-/* Rubrik och beskrivning */
-.recept-header h1 {
-    font-size: 40px;
-    font-weight: 700;
-    line-height: 100%;
-    letter-spacing: 0%;
 
+/* Rubrik & Beskrivning */
+
+.intro h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 1.6rem;
+}
+
+.intro p {
+    font-size: 2.4rem;
+    line-height: 100%;
+    background-color: blue;
+    padding: 1.6rem;
+}
+
+/* Ingredienser */
+
+.ingredienser .heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 1.6rem;
+}
+
+.ingredienser .heading h2 {
+font-size: 2.4rem;
+font-weight: 600;
+}
+
+.ingredienser .heading span {
+    font-size: 2.4rem;
+    font-weight: 400;
+    color: green;
+}
+
+.ingredienser ul {
+    list-style: disc inside;
+    padding-left: 2.4rem;
+    font-size: 1.6rem;
+    line-height: 100%;
+}
+
+.ingredienser ul li {
+    margin-bottom: 0.8rem;
 }
