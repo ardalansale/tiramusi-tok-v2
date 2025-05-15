@@ -7,57 +7,58 @@
     <link rel="stylesheet" href="/stylesheets/style.css">
 </head>
 <body>
-    <main>
-        <div class="hero-container">
-            <div class="hero-image">
-                <img src="/images/hero.webp" alt="En person som serverar en tallrik tiramisu, endast armen syns">
-            </div>
-        </div>
-        
-        <section class="recept-container">
-            <div class="recept-header">
-                <h1>Ett enkelt recept på Tiramisu</h1>
-            </div>
-            
-            <div class="recept-beskrivning">
-                <p>Detta är ett klassiskt tiramisu-recept som är enkelt att följa och kommer vara en stor succé!</p>
-            </div>
-            
-            <div class="ingredienser">
-                <h2>Ingredienser</h2>
-                <p class="portioner">6 port</p>
-                <ul class="ingredienser-lista">
-                    <li>3 dl vispgrädde</li>
-                    <li>2 msk strösocker</li>
-                    <li>1 msk vaniljsocker</li>
-                    <li>250 g mascarpone</li>
-                    <li>2 msk baileys, amaretto eller rom</li>
-                    <li>3 dl starkt kaffe</li>
-                    <li>200 g savoiardikex</li>
-                </ul>
-            </div>
-            
-            <div class="instruktioner">
-                <h2>Gör så här:</h2>
-                <ol class="instruktioner-lista">
-                    <li>Vispa grädden med strösocker och vaniljsocker. Vispa den så den blir fluffig, men inte för hårt.</li>
-                    <li>Tillsätt mascarpone, baileys eller annan likör och vispa tills välblandat.</li>
-                    <li>Häll kaffet i en djup skål. Doppa savoiardikexen i kaffet och lägg i botten på en form på cirka 15x20 cm i diameter.</li>
-                    <li>Täck kexen med hälften av krämen. Lägg ett till lager kaffedoppade savoiardikex och avsluta med resten av krämen.</li>
-                    <li>Ställ i kylen minst 2 timmar så att tiramisun står till sig.</li>
-                    <li>Vid servering, pudra hela tiramisun med kakao. Jag använde en schablon som jag la ovanpå kakaon och pudrade florsocker. Sådana finns på de flesta målaraffärer.</li>
-                </ol>
-            </div>
-            
-            
-            <div class="servering">
-                <h2>Serveringsförslag</h2>
-                    <div class="servering-bilder">
-                        <img src="/images/serving.webp" alt="En bit tiramisu på en tallrik">
-                        <img src="/images/tray.webp" alt="Tillagad tiramisu i matlagningsform">
-                    </div>
-            </div>
+    <!-- Hero-bild -->
+    <section class="hero">
+        <img src="/images/hero.webp" alt="En person som serverar en tallrik tiramisu, endast armen syns">
+    </section>
+
+    <!-- Recept -->
+    <main class="container">
+        <section class="intro">
+            <h1>Ett enkelt recept på Tiramisu</h1>
+            <p>Detta är ett klassiskt tiramisu-recept som är enkelt att följa och kommer vara en stor succé!</p>
         </section>
+
+    <!-- Ingredienser -->    
+    <section class="ingredienser">
+        <div class="heading">
+            <h2>Ingredienser</h2>
+            <span>6 port</span>
+        </div>
+        <ul>
+            <li>3 dl vispgrädde</li>
+            <li>2 msk strösocker</li>
+            <li>1 msk vaniljsocker</li>
+            <li>250 g mascarpone</li>
+            <li>2 msk Baileys, Amaretto eller rom</li>
+            <li>3 dl starkt kaffe</li>
+            <li>200 g savoiardikex</li>
+        </ul>
+    </section>
+
+    <!-- Instruktioner -->
+    <section class="instruktioner">
+        <h2>Gör så här:</h2>
+        <ol>
+            <li>Vispa grädden med strösocker och vaniljsocker tills den blir fluffig men inte för hårt.</li>
+            <li>Tillsätt mascarpone och likör, vispa tills välblandat.</li>
+            <li>Doppa savoiardikexen snabbt i kaffe och lägg i botten av en form (ca 15×20 cm).</li>
+            <li>Varva kex och kräm, avsluta med kräm.</li>
+            <li>Kyl i minst 2 timmar.</li>
+            <li>Pudra med kakao vid servering.</li>
+        </ol>
+    </section>
+
+    <!-- Bilder på serveringsförslag -->
+    <section class="servering">
+        <h2>Serveringsförslag</h2>
+        <div class="pics">
+            <img src="images/serving.webp" alt="En bit tiramisu på en tallrik">
+            <img src="images/tray.webp"   alt="Tiramisu i en form">
+        </div>
+    </section>
+
     </main>
+    
 </body>
 </html>
