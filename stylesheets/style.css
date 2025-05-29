@@ -139,3 +139,8 @@ font-weight: 600;
     height: 40rem;
     object-fit: cover;
 }
+
+/* Tangentbordanpassning */
+section[tabindex="0"]:focus {
+    background-color: #ffe8d0;
+}
