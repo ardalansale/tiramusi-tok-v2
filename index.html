@@ -3,33 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ett enkelt recept för att tillaga Tiramisu"> <!-- (Ny) Beskrivning av sidans innehåll -->
     <title>Tiramisu Recept</title>
     <link rel="stylesheet" href="/stylesheets/style.css">
 </head>
 <body>
-    <main class="container">
+
+    <main class="container" role="main"> <!-- (Ny) Role hjälper skärmläsare att snabbare hitta huvudinnehållet   -->
 
         <!-- Hero-sektion -->
         <section class="hero">
-            <img src="/images/hero.webp" alt="En person som serverar en tallrik tiramisu, endast armen syns">
+            <img src="/images/hero.webp" alt="" aria-hidden="true" > <!-- (Ny) Tog bort alternativtexten eftersom bilden är dekorativ och inte tillför något innehåll, samt döljer den för skärmläsare -->
         </section>
 
         <!-- Recept-sektion-->
-        <section class="recept-content">
+        <article class="recept-content"> <!-- (Ny) Då recepten är fristående/självstädning från resten av sidan ändrade jag från Section till Article -->
 
-            <!-- Rubrik & Beskrivning -->
-            <div class="intro">
+            <!-- Rubrik & Beskrivning --> <!-- (Ny) Eftersom detta är en introduktion till artikeln passar det bättre med Header istället för div -->
+            <header class="intro">
                 <h1>Ett enkelt recept på Tiramisu</h1>
                 <p>Detta är ett klassiskt tiramisu-recept som är enkelt att följa och kommer vara en stor succé!</p>
-            </div>
+            </header>
 
             <!-- Ingredienser -->    
-            <section class="ingredienser">
+            <section class="ingredienser" tabindex="0"> <!-- (Ny) Går att komma hit genom Tab-->
                 <div class="heading">
                     <h2>Ingredienser</h2>
                     <span>(6 port)</span>
                 </div>
-                <ul class="ingredienser-lista">
+                <ul class="ingredienser-lista" aria-label="De ingredienser som behövs för att göra Tiramisu"> <!-- (Ny) Förtydligande -->
                     <li>3 dl vispgrädde</li>
                     <li>2 msk strösocker</li>
                     <li>1 msk vaniljsocker</li>
@@ -41,12 +43,12 @@
             </section>
 
             <!-- Instruktioner -->
-            <section class="instruktioner">
+            <section class="instruktioner" tabindex="0"> <!-- (Ny) Går att komma hit genom Tab-->
                 <h2>Gör så här:</h2>
-                <ol class="instruktioner-lista">
+                <ol class="instruktioner-lista" aria-label="Steg för att göra Tiramisu"> <!-- (Ny) Förtydligande -->
                     <li>Vispa grädden med strösocker och vaniljsocker tills den blir fluffig men inte för hårt.</li>
                     <li>Tillsätt mascarpone och likör, vispa tills välblandat.</li>
-                    <li>Doppa savoiardikexen snabbt i kaffe och lägg i botten av en form (ca 15×20 cm).</li>
+                    <li>Doppa savoiardikexen snabbt i kaffe och lägg i botten av en form (ca 15x20 cm).</li>
                     <li>Varva kex och kräm, avsluta med kräm.</li>
                     <li>Kyl i minst 2 timmar.</li>
                     <li>Pudra med kakao vid servering.</li>
@@ -57,12 +59,12 @@
             <section class="servering">
                 <h2>Serveringsförslag</h2>
                 <div class="servering-pics">
-                    <img src="images/serving.webp" alt="En bit tiramisu på en tallrik">
-                    <img src="images/tray.webp"   alt="Tiramisu i en form">
+                    <img src="images/serving.webp" alt="" aria-hidden="true">  <!-- (Ny) Tog bort alternativatexten här också -->
+                    <img src="images/tray.webp"   alt="" aria-hidden="true">  <!-- (Ny) Tog bort alternativa texten även här -->
                 </div>
             </section>
             
-        </section>
+        </article>
     </main>
 </body>
 </html>
