@@ -13,25 +13,27 @@
 
         <!-- Hero-sektion -->
         <div class="hero">
-            <img src="/images/hero.webp" alt="" aria-hidden="true" > <!-- (Ny) Tog bort alternativtexten eftersom bilden är dekorativ och inte tillför något innehåll, samt döljer den för skärmläsare -->
+            <figure> <!-- La bilderna i en Figure tagg -->
+                <img src="/images/hero.webp" alt="" aria-hidden="true">
+            </figure>
         </div>
 
         <!-- Recept-sektion-->
-        <article class="recept-content"> <!-- (Ny) Då recepten är fristående/självstädning från resten av sidan ändrade jag från Section till Article -->
+        <article class="recept-content">
 
-            <!-- Rubrik & Beskrivning --> <!-- (Ny) Eftersom detta är en introduktion till artikeln passar det bättre med Header istället för div -->
+            <!-- Rubrik & Beskrivning -->
             <header class="intro">
                 <h1>Ett enkelt recept på Tiramisu</h1>
                 <p>Detta är ett klassiskt tiramisu-recept som är enkelt att följa och kommer vara en stor succé!</p>
             </header>
 
             <!-- Ingredienser -->    
-            <section class="ingredienser" tabindex="0"> <!-- (Ny) Går att komma hit genom Tab-->
+            <section class="ingredienser" tabindex="0">
                 <div class="heading">
                     <h2>Ingredienser</h2>
                     <span>(6 port)</span>
                 </div>
-                <ul class="ingredienser-lista" aria-label="De ingredienser som behövs för att göra Tiramisu"> <!-- (Ny) Förtydligande -->
+                <ul class="ingredienser-lista" aria-label="De ingredienser som behövs för att göra Tiramisu.">
                     <li>3 dl vispgrädde</li>
                     <li>2 msk strösocker</li>
                     <li>1 msk vaniljsocker</li>
@@ -43,9 +45,9 @@
             </section>
 
             <!-- Instruktioner -->
-            <section class="instruktioner" tabindex="0"> <!-- (Ny) Går att komma hit genom Tab-->
+            <section class="instruktioner" tabindex="0">
                 <h2>Gör så här:</h2>
-                <ol class="instruktioner-lista" aria-label="Steg för att göra Tiramisu"> <!-- (Ny) Förtydligande -->
+                <ol class="instruktioner-lista" aria-label="Steg för att göra Tiramisu.">
                     <li>Vispa grädden med strösocker och vaniljsocker tills den blir fluffig men inte för hårt.</li>
                     <li>Tillsätt mascarpone och likör, vispa tills välblandat.</li>
                     <li>Doppa savoiardikexen snabbt i kaffe och lägg i botten av en form (ca 15x20 cm).</li>
@@ -59,8 +61,12 @@
             <section class="servering">
                 <h2>Serveringsförslag</h2>
                 <div class="servering-pics">
-                    <img src="images/serving.webp" alt="" aria-hidden="true">  <!-- (Ny) Tog bort alternativatexten här också -->
-                    <img src="images/tray.webp"   alt="" aria-hidden="true">  <!-- (Ny) Tog bort alternativa texten även här -->
+                    <figure> <!-- La bilderna i en Figure tagg -->
+                        <img src="images/serving.webp" alt="Tiramisu upplagd på en tallrik med en sked bredvid.">  <!-- Efter ha dolt bilden, kom jag fram till att bilden faktiskt fyller ett syfte -->
+                    </figure>
+                    <figure> <!-- La bilderna i en Figure tagg -->
+                        <img src="images/tray.webp" alt="En person skär upp en hel tiramisu i fyrkantiga bitar för servering.">  <!-- Detsamma gäller denna bild -->
+                    </figure>
                 </div>
             </section>
             
