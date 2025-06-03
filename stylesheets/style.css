@@ -1,5 +1,9 @@
-/* Open Sans */
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+/* Variabler */
+:root {
+--primary-color: hsl(166 0% 4.5%);
+--secondary-color: hsl(14, 100%, 37%);
+--tertiary-color: hsl(216, 100%, 37%);
+}
 
 /* Grundläggande */
 * {
@@ -15,7 +19,7 @@ html {
 body {
     background-color: rgb(192, 130, 89);
     font-family: 'Open Sans', sans-serif;
-    color: black;
+    color: var(--primary-color);
 }
 
 /* Container för recept-delen */
@@ -56,14 +60,14 @@ body {
 }
 
 /* Rubrik & Beskrivning */
-.intro h1 {
-    color: rgba(175, 56, 8, 0.736);
+.recept-content__intro h1 {
+    color: var(--secondary-color);
     font-size: 4rem;
     font-weight: 700;
     margin-bottom: 3.2rem;
 }
 
-.intro p {
+.recept-content__intro p {
     font-size: 2.4rem;
     font-weight: 400;
     line-height: 1.4;
@@ -72,18 +76,18 @@ body {
 }
 
 /* Ingredienser */
-.ingredienser .heading {
+.ingredienser__heading {
     display: flex;
     align-items: baseline;
     margin-bottom: 1.6rem;
 }
 
-.ingredienser .heading h2 {
+.ingredienser__heading h2 {
 font-size: 2.4rem;
 font-weight: 600;
 }
 
-.ingredienser .heading span {
+.ingredienser__heading span {
     font-size: 2.4rem;
     font-weight: 400;
     margin-left: 1.6rem;
@@ -127,20 +131,23 @@ font-weight: 600;
     margin-bottom: 1.6rem;
 }
 
-.servering-pics {
+.servering__images {
     display: flex;
+    justify-content: space-between;
     gap: 2.4rem;
     flex-wrap: wrap;
     margin-top: 2rem;
 }
 
-.servering-pics img {
+.servering__images img {
     flex: 1 1 48%;
+    width: 54rem;
     height: 40rem;
     object-fit: cover;
 }
 
 /* Tangentbordanpassning */
-section[tabindex="0"]:focus {
+section[tabindex="0"]:focus-visible { /* (Ny) Rutan dyker endast upp när man tabbar */
+    outline: 3px solid var(--secondary-color);
     background-color: #ffe8d0;
 }

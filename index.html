@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Ett enkelt recept för att tillaga Tiramisu"> <!-- (Ny) Beskrivning av sidans innehåll -->
     <title>Tiramisu Recept</title>
-    <link rel="stylesheet" href="/stylesheets/style.css">
+    <link rel="stylesheet" href="/stylesheets/style.css"> <!-- Importerar font på detta sätt för optimera performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -14,7 +17,7 @@
         <!-- Hero-sektion -->
         <div class="hero">
             <figure> <!-- La bilderna i en Figure tagg -->
-                <img src="/images/hero.webp" alt="" aria-hidden="true">
+                <img src="/images/hero.webp" alt="" width="?" height="?" aria-hidden="true">
             </figure>
         </div>
 
@@ -22,18 +25,18 @@
         <article class="recept-content">
 
             <!-- Rubrik & Beskrivning -->
-            <header class="intro">
+            <header class="recept-content__intro h1">
                 <h1>Ett enkelt recept på Tiramisu</h1>
                 <p>Detta är ett klassiskt tiramisu-recept som är enkelt att följa och kommer vara en stor succé!</p>
             </header>
 
             <!-- Ingredienser -->    
             <section class="ingredienser" tabindex="0">
-                <div class="heading">
+                <div class="ingredienser__heading">
                     <h2>Ingredienser</h2>
                     <span>(6 port)</span>
                 </div>
-                <ul class="ingredienser-lista" aria-label="De ingredienser som behövs för att göra Tiramisu.">
+                <ul aria-label="De ingredienser som behövs för att göra Tiramisu.">
                     <li>3 dl vispgrädde</li>
                     <li>2 msk strösocker</li>
                     <li>1 msk vaniljsocker</li>
@@ -47,7 +50,7 @@
             <!-- Instruktioner -->
             <section class="instruktioner" tabindex="0">
                 <h2>Gör så här:</h2>
-                <ol class="instruktioner-lista" aria-label="Steg för att göra Tiramisu.">
+                <ol aria-label="Steg för att göra Tiramisu.">
                     <li>Vispa grädden med strösocker och vaniljsocker tills den blir fluffig men inte för hårt.</li>
                     <li>Tillsätt mascarpone och likör, vispa tills välblandat.</li>
                     <li>Doppa savoiardikexen snabbt i kaffe och lägg i botten av en form (ca 15x20 cm).</li>
@@ -60,7 +63,7 @@
             <!-- Bilder på serveringsförslag -->
             <section class="servering">
                 <h2>Serveringsförslag</h2>
-                <div class="servering-pics">
+                <div class="servering__images">
                     <figure> <!-- La bilderna i en Figure tagg -->
                         <img src="images/serving.webp" alt="Tiramisu upplagd på en tallrik med en sked bredvid.">  <!-- Efter ha dolt bilden, kom jag fram till att bilden faktiskt fyller ett syfte -->
                     </figure>
