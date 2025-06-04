@@ -1,8 +1,23 @@
 /* Variabler */
 :root {
---primary-color: hsl(166 0% 4.5%);
---secondary-color: hsl(14, 100%, 37%);
---tertiary-color: hsl(216, 100%, 37%);
+    --bg-color: hsl(24, 44%, 58%);
+    --bg-secondary-color: hsl(0, 0%, 95%);
+    --bg-tertiary-color: hsl(0, 0%, 80%);
+    --primary-color: hsl(166 0% 4.5%);
+    --secondary-color: hsl(14, 100%, 37%);
+    --tertiary-color: hsl(216, 100%, 37%);
+    --border-radius: 1rem;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {    
+    --bg-color: hsl(19, 81%, 8%);
+    --bg-secondary-color: hsl(20, 100%, 16%);
+    --bg-tertiary-color: hsl(0, 2%, 8%);
+    --primary-color: hsl(0, 0%, 100%);
+    --secondary-color: hsl(60, 90%, 88%);
+    --tertiary-color: hsl(216, 100%, 37%);
+    }
 }
 
 /* Grundläggande */
@@ -17,7 +32,7 @@ html {
 }
 
 body {
-    background-color: rgb(192, 130, 89);
+    background-color:var(--bg-color);
     font-family: 'Open Sans', sans-serif;
     color: var(--primary-color);
 }
@@ -27,11 +42,12 @@ body {
     position: relative;
     max-width: 128rem;
     margin: 0 auto;
-    background: rgb(255, 255, 255);
+    background: var(--bg-secondary-color);
     padding: 0 6.4rem 6.4rem;
     display: flex;
     flex-direction: column;
     gap: 3.2rem;
+    border-radius: var(--border-radius)
 }
 
 /* Hero */
@@ -59,6 +75,10 @@ body {
     gap: 3.2rem;
 }
 
+:is(.ingredienser, .instruktioner) li:hover {
+    font-size: 2.4rem;
+}
+
 /* Rubrik & Beskrivning */
 .recept-content__intro h1 {
     color: var(--secondary-color);
@@ -71,8 +91,9 @@ body {
     font-size: 2.4rem;
     font-weight: 400;
     line-height: 1.4;
-    background-color:#EBEBEB;
+    background-color: var(--bg-tertiary-color);
     padding: 2.4rem;
+    border-radius: var(--border-radius)
 }
 
 /* Ingredienser */
@@ -144,10 +165,22 @@ font-weight: 600;
     width: 54rem;
     height: 40rem;
     object-fit: cover;
+    border-radius: var(--border-radius)
 }
 
-/* Tangentbordanpassning */
+/* Tillgänglighetsanpassning */
 section[tabindex="0"]:focus-visible { /* (Ny) Rutan dyker endast upp när man tabbar */
     outline: 3px solid var(--secondary-color);
-    background-color: #ffe8d0;
+    background-color: hsl(25, 37%, 84%);
+}
+
+:is(.ingredienser, .instruktioner) li:hover {
+    font-size: 2.4rem;
+    transform: scale(1.05);  
+}
+
+:is(.ingredienser, .instruktioner) li {
+    transition: 
+        font-size 0.2s ease,
+        transform 0.3s ease; 
 }
