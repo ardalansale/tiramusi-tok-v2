@@ -1,6 +1,6 @@
 /* Variabler */
 :root {
-    --bg-color: hsl(24, 44%, 58%);
+    --bg-color: hsl(35, 90%, 80%);
     --bg-secondary-color: hsl(0, 0%, 95%);
     --bg-tertiary-color: hsl(0, 0%, 85%);
     --primary-color: hsl(166 0% 4.5%);
@@ -159,7 +159,7 @@ section[tabindex="0"]:focus-visible { /* (Ny) Rutan dyker endast upp när man ta
     background-color: hsl(25, 37%, 84%);
 }
 
-:is(.ingredienser, .instruktioner) li:hover {
+/* :is(.ingredienser, .instruktioner) li:hover {
     font-size: 2.4rem;
     transform: scale(1.05);  
 }
@@ -168,4 +168,4 @@ section[tabindex="0"]:focus-visible { /* (Ny) Rutan dyker endast upp när man ta
     transition: 
         font-size 0.2s ease,
         transform 0.3s ease; 
-}
+} */
