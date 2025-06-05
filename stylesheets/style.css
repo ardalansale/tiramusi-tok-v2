@@ -1,4 +1,4 @@
-/* Variabler */
+/* Global Variabler */
 :root {
     --bg-color: hsl(35, 90%, 80%);
     --bg-secondary-color: hsl(0, 0%, 95%);
@@ -21,7 +21,7 @@
     }
 }
 
-/* Grundläggande */
+/* Global Style */
 * {
     margin: 0;
     padding: 0;
@@ -48,7 +48,7 @@ h2 {
     font-weight: 600;
 }
 
-/* Container för recept-delen */
+/* Recept block */
 .container {
     position: relative;
     width: 100%;
@@ -133,7 +133,7 @@ h2 {
     line-height: 1.4;
 }
 
-/* Serveringförslag */
+/* Serveringsförslag */
 
 .servering__images {
     display: flex;
@@ -154,7 +154,7 @@ h2 {
 }
 
 /* Tillgänglighetsanpassning */
-section[tabindex="0"]:focus-visible { /* (Ny) Rutan dyker endast upp när man tabbar */
+section[tabindex="0"]:focus-visible {
     outline: 3px solid var(--secondary-color);
     background-color: hsl(25, 37%, 84%);
 }
