@@ -155,8 +155,9 @@ h2 {
 
 /* Tillgänglighetsanpassning */
 section[tabindex="0"]:focus-visible {
-    outline: 3px solid var(--secondary-color);
-    background-color: hsl(25, 37%, 84%);
+    outline: 0.2rem solid var(--secondary-color);
+    border-radius: var(--border-radius);
+    /* background-color: hsl(25, 37%, 84%); */
 }
 
 /* :is(.ingredienser, .instruktioner) li:hover {
